@@ -11,7 +11,7 @@ btn.addEventListener('click',(event)=>{
     let age = parseInt(ageInput.value);
 
     if(isNaN(age) || age<1 || name1.trim() === ""){
-        alert("Please enter a valid input...")
+        alert("Please enter valid details")
         return;
     }
 
@@ -27,7 +27,7 @@ btn.addEventListener('click',(event)=>{
     }).then(()=>{
         alert(`Welcome, ${name1}. You can vote.`)
     }).catch(()=>{
-        alert(`Oh sorry ${name1} You aren't old enough.`)
+        alert(`Oh sorry ${name1}. You aren't old enough.`)
     })
 });
 
